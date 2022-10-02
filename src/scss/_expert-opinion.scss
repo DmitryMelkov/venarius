@@ -1,0 +1,67 @@
+@import "_var";
+
+.expert-opinion {
+  padding-top: 93px;
+  &__container {
+    display: flex;
+  }
+  &__left {
+    width: 25%;
+    margin-right: 30px;
+  }
+  &__header {
+    margin-bottom: 26px;
+  }
+  &__descr {
+    color: $colorGrey;
+  }
+  &__right {
+    width: 70%;
+    position: relative;
+  }
+  &__slide-content {
+    position: relative;
+  }
+  &__swiper {
+    padding-bottom: 50px;
+  }
+}
+
+.expert-opinion__swiper .swiper-pagination {
+  text-align: left;
+}
+
+.expert-opinion__swiper .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  border: 1px solid $colorBrgundyDark;
+  background-color: $colorWhite;
+}
+
+.expert-opinion__swiper .swiper-pagination-bullet-active {
+  background-color: $colorBrgundyDark;
+}
+
+@media (max-width: 900px) {
+  .expert-opinion {
+    &__container {
+      flex-direction: column;
+    }
+    &__left {
+      width: 100%;
+      margin-right: 0;
+    }
+    &__header {
+      margin-bottom: 0;
+    }
+    &__descr {
+      margin-bottom: 30px;
+    }
+    &__right {
+      width: 100%;
+    }
+  }
+  .expert-opinion__swiper .swiper-pagination {
+    text-align: center;
+  }
+}

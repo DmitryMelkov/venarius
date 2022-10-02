@@ -1,0 +1,125 @@
+@import "_var";
+
+
+.header {
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 31px;
+    padding-bottom: 31px;
+  }
+  &__content {
+    display: flex;
+  }
+  &__menu {
+    padding-top: 31px;
+    padding-bottom: 31px;
+    padding-left: calc((100% - 1170px) / 2);
+    padding-right: calc((100% - 1170px) / 2);
+
+    width: 100%;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: $colorWhite;
+    background-image: url("../img/burger-bg.svg");
+    background-position: 0 32%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(-100%);
+    z-index: 11;
+  }
+  &__menu.active {
+    transform: translateY(0);
+  }
+  &__menu-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__nav-list {
+    padding-top: 154px;
+  }
+
+  &__nav-item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  &__nav-link {
+    padding: 5px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    transition-property: color, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+}
+
+//hover
+@media (min-width: 1024px) {
+  .header {
+    &__nav-link:hover {
+      color: $colorBrgundy;
+    }
+  }
+}
+
+//active, focus
+.header {
+  &__nav-link:active {
+    color: $colorBrgundyDark;
+  }
+  &__nav-link:focus-visible:not(:active) {
+    color: $colorWhite;
+    background-color: $colorBrgundy;
+    outline: none;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .header {
+    &__menu {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .search {
+    margin-right: 15px;
+    &__svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .geo {
+    margin-right: 15px;
+    &__svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .burger {
+    &__svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .logo {
+    width: 135px;
+    height: 25px;
+  }
+}

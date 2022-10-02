@@ -1,0 +1,154 @@
+@import "_var";
+
+.complex-action {
+  &__container {
+    display: flex;
+  }
+  &__left {
+    width: 25%;
+    margin-right: 30px;
+  }
+  &__right {
+    width: 70%;
+  }
+  &__right-item {
+    border-top: 1px solid $colorBrgundyDark;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    position: relative;
+  }
+  &__right-item:last-child {
+    border-bottom: 1px solid $colorBrgundyDark;
+  }
+  &__right-link-content {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 159px;
+  }
+  &__right-link {
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: $colorBrgundyDark;
+    transition-property: color, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+  &__right-descr {
+    max-width: 360px;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  &__right-svg {
+    position: absolute;
+    width: 134px;
+    height: 134px;
+    z-index: 1;
+  }
+  &__right-svg-1 {
+    top: 20px;
+    left: 115px;
+  }
+  &__right-svg-2 {
+    top: 20px;
+    right: 20px;
+  }
+  &__right-svg-3 {
+    top: -15px;
+    left: 60px;
+  }
+  &__right-svg-4 {
+    bottom: -29px;
+    right: 33px;
+  }
+  &__right-svg-5 {
+    bottom: -15px;
+    left: 120px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .complex-action {
+    &__right-link:hover {
+      color: $colorWhite;
+      background-color: $colorBrgundyDark;
+    }
+  }
+
+}
+
+//active, focus
+.complex-action {
+  &__right-link:active {
+    color: $colorWhite;
+    background-color: $colorBrgundyDark;
+  }
+  &__right-link:focus-visible {
+    color: $colorWhite;
+    background-color: $colorBrgundyDark;
+    outline: none;
+  }
+
+}
+
+
+@media (max-width: 1120px) {
+  .complex-action {
+    &__right-svg-1,
+    &__right-svg-2,
+    &__right-svg-3,
+    &__right-svg-4,
+    &__right-svg-5 {
+      top: -11px;
+      bottom: 0;
+      left: 69px;
+      right: 0;
+    }
+    &__right-link-content {
+      margin-right: 0;
+    }
+    &__right-item {
+      justify-content: space-between;
+    }
+  }
+
+}
+
+@media (max-width: 900px) {
+  .complex-action {
+    &__container {
+      flex-direction: column;
+    }
+    &__left {
+      width: 100%;
+      margin-right: 0;
+    }
+    &__right {
+      width: 100%;
+    }
+    &__descr {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .complex-action {
+    &__right-item {
+      padding-top: 160px;
+      flex-direction: column;
+    }
+    &__right-svg {
+      top: 10px;
+      left: 0;
+    }
+    &__right-descr {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+}

@@ -1,0 +1,282 @@
+@import "_var";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-shadow: none;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 700;
+  color: $colorBlack;
+  font-family: "Merriweather", sans-serif;
+}
+
+h2 {
+  padding-bottom: 26px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: $colorBlack;
+  font-family: "Merriweather", sans-serif;
+}
+
+.title-reset {
+  margin: 0;
+}
+
+.descr-reset {
+  margin: 0;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.btn-reset {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+}
+
+.content-btn-1 {
+  width: 263px;
+  height: 67px;
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
+  color: $colorWhite;
+  background-color: transparent;
+  border-radius: 33px;
+  border: 1px solid $colorWhite;
+  transition-property: color, background-color, border;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.content-btn-2 {
+  width: 263px;
+  height: 67px;
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
+  color: $colorWhite;
+  background-color: transparent;
+  border-radius: 33px;
+  border: 1px solid $colorWhite;
+  transition-property: color, background-color, border;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.container {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.search {
+  margin-right: 51px;
+  &__btn {
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  &__btn:hover {
+    border: 2px solid $colorBrgundyDark;
+  }
+  &__svg {
+    width: 48px;
+    height: 47px;
+    color: $colorBrgundyDark;
+  }
+}
+
+.geo {
+  margin-right: 44px;
+  &__btn {
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  &__btn:hover {
+    border: 2px solid $colorBrgundyDark;
+  }
+  &__svg {
+    width: 42px;
+    height: 49px;
+    color: $colorBrgundyDark;
+  }
+}
+
+.burger {
+  &__btn {
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+  }
+  &__btn:hover {
+    border: 2px solid $colorBrgundyDark;
+  }
+  &__svg {
+    width: 66px;
+    height: 41px;
+    color: $colorBrgundyDark;
+  }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+
+
+
+
+//hover
+@media (min-width: 1024px) {
+  .content-btn-2:hover {
+    background-color: $colorBrgundyDark;
+    border: 1px solid $colorBrgundyDark;
+    color: $colorWhite;
+  }
+  .content-btn-1:hover {
+    border: 1px solid rgba($color: $colorWhite, $alpha: 0.3);
+    color: rgba($color: $colorWhite, $alpha: 0.3);
+  }
+}
+
+//active, focus
+.content-btn-2:active {
+  background-color: $colorBrgundyDark;
+  border: 1px solid $colorBrgundyDark;
+  color: $colorWhite;
+}
+
+.content-btn-2:focus-visible {
+  background-color: $colorBrgundyDark;
+  border: 1px solid $colorBrgundyDark;
+  color: $colorWhite;
+  outline: none;
+}
+
+.content-btn-1:active {
+  border: 1px solid rgba($color: $colorWhite, $alpha: 0.3);
+  background-color: rgba($color: $colorWhite, $alpha: 0.3);
+  color: rgba($color: $colorWhite, $alpha: 0.3);
+}
+
+.content-btn-1:focus-visible {
+  border: 1px solid rgba($color: $colorWhite, $alpha: 0.3);
+  background-color: rgba($color: $colorWhite, $alpha: 0.3);
+  color: rgba($color: $colorWhite, $alpha: 0.3);
+}
+
+.burger {
+  &__btn:active {
+    border: 2px solid $colorBrgundyDark;
+  }
+  &__btn:focus-visible:not(:active) {
+    border: 2px solid $colorBrgundy;
+    background-color: $colorBrgundy;
+    outline: none;
+  }
+  &__btn:focus-visible:not(:active) &__svg {
+    color: $colorWhite;
+  }
+}
+
+.geo {
+  &__btn:active {
+    border: 2px solid $colorBrgundyDark;
+  }
+  &__btn:focus-visible:not(:active) {
+    border: 2px solid $colorBrgundy;
+    background-color: $colorBrgundy;
+    outline: none;
+  }
+  &__btn:focus-visible:not(:active) &__svg {
+    color: $colorWhite;
+  }
+}
+
+.search {
+  &__btn:active {
+    border: 2px solid $colorBrgundyDark;
+  }
+  &__btn:focus-visible:not(:active) {
+    border: 2px solid $colorBrgundy;
+    background-color: $colorBrgundy;
+    outline: none;
+  }
+  &__btn:focus-visible:not(:active) &__svg {
+    color: $colorWhite;
+  }
+}
+
+// import swiper
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/modules/pagination/pagination.scss";
+@import "../../node_modules/swiper/modules/navigation/navigation.scss";
+@import "../../node_modules/swiper/modules/grid/grid.scss";

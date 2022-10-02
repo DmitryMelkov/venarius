@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{ "title": "Главная" })
+
+<body>
+  @@include('html/header.html',{ })
+  <main>
+    <!-- intro -->
+    <section class="intro">
+      <div class="intro__top">
+        <div class="container intro__top-container">
+          <div class="intro__left">
+            <h1 class="intro__left-header title-reset">
+              Надежный помощник в лечении варикоза
+            </h1>
+            <div class="intro__content">
+              <a href="#" class="intro__content-link">
+                <svg class="intro__link-svg">
+                  <use xlink:href="img/icons/icons.svg#intro-link-1"></use>
+                </svg>
+                <span class="intro__link-span"> Схема приема</span>
+              </a>
+              <a href="#" class="intro__content-link">
+                <svg class="intro__link-svg">
+                  <use xlink:href="img/icons/icons.svg#intro-link-2"></use>
+                </svg>
+                <span class="intro__link-span">Инструкция</span>
+              </a>
+              <a href="#" class="intro__content-link">
+                <svg class="intro__link-svg">
+                  <use xlink:href="img/icons/icons.svg#intro-link-3"></use>
+                </svg>
+                <span class="intro__link-span"> Где купить</span>
+              </a>
+            </div>
+          </div>
+          <div class="intro__right">
+            <div class="swiper intro__swiper intro-swiper-js">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide intro__swiper-slide">
+                  <picture class="intro__slide-img">
+                    <source media="(min-width: 501px)" srcset="@img/intro-slide-1.png">
+                    <source media="(max-width: 500px)" srcset="@img/intro-slide-1-500.png">
+                    <img src="@img/intro-slide-1.png" alt="intro-slide">
+                  </picture>
+                </div>
+                <div class="swiper-slide intro__swiper-slide">
+                  <picture class="intro__slide-img">
+                    <source media="(min-width: 501px)" srcset="@img/intro-slide-1.png">
+                    <source media="(max-width: 500px)" srcset="@img/intro-slide-1-500.png">
+                    <img src="@img/intro-slide-1.png" alt="intro-slide">
+                  </picture>
+                </div>
+                <div class="swiper-slide intro__swiper-slide">
+                  <picture class="intro__slide-img">
+                    <source media="(min-width: 501px)" srcset="@img/intro-slide-1.png">
+                    <source media="(max-width: 500px)" srcset="@img/intro-slide-1-500.png">
+                    <img src="@img/intro-slide-1.png" alt="intro-slide">
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <div class="slider__nav-btn">
+              <button class="swiper-button-next slider__btn-next btn-reset">
+                <svg class="slider__btn-svg">
+                  <use xlink:href="img/icons/icons.svg#intro-btn-next"></use>
+                </svg>
+              </button>
+              <button class="swiper-button-prev slider__btn-prev btn-reset">
+                <svg class="slider__btn-svg">
+                  <use xlink:href="img/icons/icons.svg#intro-btn-prev"></use>
+                </svg>
+              </button>
+            </div>
+            <button class="intro__right-btn content-btn-1 btn-reset">Где купить ></button>
+          </div>
+        </div>
+      </div>
+      <div class="ticker">
+        <div class="ticker__content">
+          <ul class="ticker__list">
+            <li class="ticker__item">
+              <a href="#" class="ticker__link">
+                >>> получить скидку 10%
+              </a>
+            </li>
+            <li class="ticker__item">
+              <a href="#" class="ticker__link">
+                >>> получить скидку 10%
+              </a>
+            </li>
+            <li class="ticker__item">
+              <a href="#" class="ticker__link">
+                >>> получить скидку 10%
+              </a>
+            </li>
+            <li class="ticker__item">
+              <a href="#" class="ticker__link">
+                >>> получить скидку 10%
+              </a>
+            </li>
+            <li class="ticker__item">
+              <a href="#" class="ticker__link">
+                >>> получить скидку 10%
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="intro__bottom">
+        <div class="container intro__bottom-container">
+          <div class="intro__bootom-item">
+            <svg class="intro__bootom-svg">
+              <use xlink:href="img/icons/icons.svg#intro-bootom-svg-1"></use>
+            </svg>
+            <span class="intro__bottom-span">Доказанная эффективность</span>
+          </div>
+          <div class="intro__bootom-item">
+            <svg class="intro__bootom-svg">
+              <use xlink:href="img/icons/icons.svg#intro-bootom-svg-2"></use>
+            </svg>
+            <span class="intro__bottom-span">Новая дозировка
+              100 мг + 900 мг</span>
+          </div>
+          <div class="intro__bootom-item intro__bootom-item-last">
+            <svg class="intro__bootom-svg">
+              <use xlink:href="img/icons/icons.svg#intro-bootom-svg-3"></use>
+            </svg>
+            <span class="intro__bottom-span intro__bottom-span-last">Удобный прием. <br>
+              Одна таблетка в сутки*</span>
+            <button class="intro__bottom-btn btn-reset">
+              <svg class="intro__bottom-svg-info">
+                <use xlink:href="img/icons/icons.svg#intro-bootom-svg-4"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- complex-action -->
+    <section class="complex-action">
+      <div class="container complex-action__container">
+        <div class="complex-action__left">
+          <h2 class="complex-action__header title-reset">Комплексное действие</h2>
+          <p class="complex-action__descr descr-reset">Венарус показан для терапии симптомов хронических заболеваний вен
+            (устранения
+            и облегчения симптомов).</p>
+        </div>
+        <div class="complex-action__right">
+          <ul class="complex-action__right-list">
+            <li class="complex-action__right-item">
+              <div class="complex-action__right-link-content">
+                <a href="#" class="complex-action__right-link">Подробнее ></a>
+              </div>
+              <p class="complex-action__right-descr">Помогает
+                предотвратить судороги</p>
+              <svg class="complex-action__right-svg complex-action__right-svg-1">
+                <use xlink:href="img/icons/icons.svg#complex-action-svg-1"></use>
+              </svg>
+            </li>
+            <li class="complex-action__right-item">
+              <div class="complex-action__right-link-content">
+                <a href="#" class="complex-action__right-link">Подробнее ></a>
+              </div>
+              <p class="complex-action__right-descr">Способствует
+                снижению тяжести
+                в ногах</p>
+              <svg class="complex-action__right-svg complex-action__right-svg-2">
+                <use xlink:href="img/icons/icons.svg#complex-action-svg-2"></use>
+              </svg>
+            </li>
+            <li class="complex-action__right-item">
+              <div class="complex-action__right-link-content">
+                <a href="#" class="complex-action__right-link">Подробнее ></a>
+              </div>
+              <p class="complex-action__right-descr">Способствует снижению
+                болевых ощущений</p>
+              <svg class="complex-action__right-svg complex-action__right-svg-3">
+                <use xlink:href="img/icons/icons.svg#complex-action-svg-3"></use>
+              </svg>
+            </li>
+            <li class="complex-action__right-item">
+              <div class="complex-action__right-link-content">
+                <a href="#" class="complex-action__right-link">Подробнее ></a>
+              </div>
+              <p class="complex-action__right-descr">Помогает
+                уменьшить отеки</p>
+              <svg class="complex-action__right-svg complex-action__right-svg-4">
+                <use xlink:href="img/icons/icons.svg#complex-action-svg-4"></use>
+              </svg>
+            </li>
+            <li class="complex-action__right-item">
+              <div class="complex-action__right-link-content">
+                <a href="#" class="complex-action__right-link">Подробнее ></a>
+              </div>
+              <p class="complex-action__right-descr">Оказывает ангиопротекторное
+                и венотонизурующее действие</p>
+              <svg class="complex-action__right-svg complex-action__right-svg-5">
+                <use xlink:href="img/icons/icons.svg#complex-action-svg-5"></use>
+              </svg>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+    <!-- about -->
+    <section class="about">
+      <div class="container about__container">
+        <div class="about__left">
+          <h2 class="about__header title-reset">О производстве Венарус</h2>
+        </div>
+        <div class="about__right">
+          <div class="about__right-container">
+            <div class="swiper about__swiper about-swiper-js">
+              <div class="swiper-wrapper about__swiper-wrapper">
+                <div class="swiper-slide about__swiper-slide">
+                  <img src="@img/about-slide-1.png" alt="about-img" class="about__swiper-img">
+                  <button class="about__slide-play btn-reset" data-modal="#slide-1">
+                    <svg class="about__play-svg">
+                      <use xlink:href="img/icons/icons.svg#play"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="swiper-slide about__swiper-slide">
+                  <img src="@img/about-slide-2.png" alt="about-img" class="about__swiper-img">
+                  <button class="about__slide-play btn-reset" data-modal="#slide-2">
+                    <svg class="about__play-svg">
+                      <use xlink:href="img/icons/icons.svg#play"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="about__nav-btn">
+              <button class="swiper-button-next slider__btn-next about__btn-next btn-reset">
+                <svg class="slider__btn-svg about__btn-svg">
+                  <use xlink:href="img/icons/icons.svg#intro-btn-next"></use>
+                </svg>
+              </button>
+              <button class="swiper-button-prev slider__btn-prev about__btn-prev btn-reset">
+                <svg class="slider__btn-svg about__btn-svg">
+                  <use xlink:href="img/icons/icons.svg#intro-btn-prev"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div>
+            <button class="about__right-btn content-btn-1 btn-reset">Подробнее ></button>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="slide-1">
+        <div class="popup__body">
+          <div class="popup__content">
+            <button class="popup__close btn-reset">Закрыть</button>
+            <h2 class="popup__header">modal-window-1</h2>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="slide-2">
+        <div class="popup__body">
+          <div class="popup__content">
+            <button class="popup__close btn-reset">Закрыть</button>
+            <h2 class="popup__header">modal-window-2</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expert-opinion -->
+    <section class="expert-opinion">
+      <div class="container expert-opinion__container">
+        <div class="expert-opinion__left">
+          <h2 class="expert-opinion__header title-reset">Мнение специалистов</h2>
+          <p class="expert-opinion__descr descr-reset">Фармакотерапия — неотъемлемый компонент современного лечения
+            хронического заболевания вен.</p>
+        </div>
+        <div class="expert-opinion__right">
+          <div class="swiper expert-opinion__swiper">
+            <div class="swiper-wrapper expert-opinion__swiper-wrapper">
+              <div class="swiper-slide expert-opinion__slide">
+                <div class="expert-opinion__slide-content">
+                  <img src="@img/expert-opinion-slide-1.png" alt="expert-opinion-img" class="expert-opinion__slide-img">
+                  <button class="about__slide-play btn-reset" data-modal="#slide-3">
+                    <svg class="about__play-svg">
+                      <use xlink:href="img/icons/icons.svg#play"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide expert-opinion__slide">
+                <div class="expert-opinion__slide-content">
+                  <img src="@img/expert-opinion-slide-1.png" alt="expert-opinion-img" class="expert-opinion__slide-img">
+                  <button class="about__slide-play btn-reset" data-modal="#slide-4">
+                    <svg class="about__play-svg">
+                      <use xlink:href="img/icons/icons.svg#play"></use>
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+              <div class="swiper-slide expert-opinion__slide">
+                <div class="expert-opinion__slide-content">
+                  <img src="@img/expert-opinion-slide-1.png" alt="expert-opinion-img" class="expert-opinion__slide-img">
+                  <button class="about__slide-play btn-reset" data-modal="#slide-5">
+                    <svg class="about__play-svg">
+                      <use xlink:href="img/icons/icons.svg#play"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-pagination expert-opinion__pagination"></div>
+          </div>
+          <div class="popup" id="slide-3">
+            <div class="popup__body">
+              <div class="popup__content">
+                <button class="popup__close btn-reset">Закрыть</button>
+                <h2 class="popup__header">modal-window-3</h2>
+              </div>
+            </div>
+          </div>
+          <div class="popup" id="slide-4">
+            <div class="popup__body">
+              <div class="popup__content">
+                <button class="popup__close btn-reset">Закрыть</button>
+                <h2 class="popup__header">modal-window-4</h2>
+              </div>
+            </div>
+          </div>
+          <div class="popup" id="slide-5">
+            <div class="popup__body">
+              <div class="popup__content">
+                <button class="popup__close btn-reset">Закрыть</button>
+                <h2 class="popup__header">modal-window-5</h2>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- useful-information -->
+    <section class="useful-information">
+      <div class="container useful-information__container">
+        <div class="useful-information__left">
+          <h2 class="useful-information__header title-reset">Полезная информация</h2>
+          <p class="useful-information__descr descr-reset">ВЕНАРУС — надежный помощник в лечении варикоза, хранитель
+            женских ног на пути к ее мечте!</p>
+        </div>
+        <div class="useful-information__right">
+          <div class="useful-information__right-galery">
+            <div class="useful-information__first-container">
+              <div class="useful-information__first-item">
+                <img src="@img/useful-information-img-1.jpg" alt="first-img" class="useful-information__first-img">
+                <a href="#" class="useful-information__first-link">
+                  Профилактические упражнения
+                </a>
+              </div>
+            </div>
+            <div class="useful-information__second-container">
+              <div class="useful-information__second-item">
+                <img src="@img/useful-information-img-2.jpg" alt="first-img" class="useful-information__second-img">
+                <a href="#" class="useful-information__second-link">
+                  Диагностика и способы лечения
+                </a>
+              </div>
+              <div class="useful-information__second-item">
+                <img src="@img/useful-information-img-3.jpg" alt="first-img" class="useful-information__second-img">
+                <a href="#" class="useful-information__second-link">
+                  Рекомендации по питанию
+                </a>
+              </div>
+              <div class="useful-information__second-item useful-information__second-item-4">
+                <img src="@img/useful-information-img-4.jpg" alt="first-img" class="useful-information__second-img">
+                <a href="#" class="useful-information__second-link">
+                  Факты
+                  о варикозе
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="useful-information__btn">
+            <button class="useful-information__btn-click content-btn-2 btn-reset">Подробнее ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- buy -->
+    <section class="buy">
+      <div class="container buy__container">
+        <div class="buy__left">
+          <h2 class="buy__header title-reset">Где
+            купить</h2>
+          <p class="buy__descr descr-reset">Ветонизирующее средство ВЕНАРУС вы можете приобрести в аптеках вашего города
+          </p>
+        </div>
+        <div class="buy__right">
+          <div class="buy__right-img">
+            <img src="@img/buy-img-content.jpg" alt="buy-img" class="buy__img-content">
+          </div>
+          <div class="buy__right-buttons">
+            <div class="buy__buttons-content">
+              <a class="buy__buttons-click" href="#">apteka.ru</a>
+            </div>
+            <div class="buy__buttons-content">
+              <a class="buy__buttons-click" href="#">366.ru</a>
+            </div>
+            <div class="buy__buttons-content">
+              <a class="buy__buttons-click" href="#">stolichki.ru</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+  @@include('html/footer.html',{ })
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
